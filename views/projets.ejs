@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - BoubixDIY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/card.css">
+    <link rel="stylesheet" href="/css/projets.css">
+</head>
+<body>
+     <!-- Header -->
+     <%- include('partials/header') %>
+
+    <!-- Projects Section -->
+    <section class="container py-5">
+
+        <div class="mb-4" style="margin-top: 60px;">
+            <input type="text" id="searchInput" class="form-control" placeholder="Rechercher des projets...">
+        </div>
+        <div class="mb-4">
+            <span>Niveau</span>
+            <button class="tag-btn" data-tag="debutant">Débutant</button>
+            <button class="tag-btn" data-tag="intermediaire">Intermédiaire</button>
+            <button class="tag-btn" data-tag="expert">Expert</button>
+            <span>&nbsp;&nbsp;Tags</span>
+            <button class="tag-btn" data-tag="electronique">Electronique</button>
+            <button class="tag-btn" data-tag="mecanique">Mecanique</button>
+            <button class="tag-btn" data-tag="bois">Bois</button>
+        </div>
+
+        <div class="card-list">
+            <a href="/projets/streamdeck" class="card-item" data-tags="debutant electronique">
+                <img src="/images/projets/streamdeck.jpg" alt="Card Image">
+                <span class="debutant">Débutant</span>
+                <span class="tag">Electronique</span>
+                <h3>StreamDeck</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="/projets/simracing_boitier" class="card-item" data-tags="intermediaire electronique">
+                <img src="/images/projets/simracing_boitier.jpg" alt="Card Image">
+                <span class="intermediaire">Intermédiaire</span>
+                <span class="tag">Electronique</span>
+                <h3>Boitier SimRacing</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="/projets/enceinte" class="card-item" data-tags="intermediaire electronique bois">
+                <img src="/images/projets/enceinte.jpg" alt="Card Image">
+                <span class="intermediaire">Intermédiaire</span>
+                <span class="tag">Electronique</span>
+                <span class="tag">Bois</span>
+                <h3>Enceinte Bluetooth</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="/projets/trophytruck" class="card-item" data-tags="expert electronique mecanique">
+                <img src="/images/projets/trophytruck.jpg" alt="Card Image">
+                <span class="expert">Expert</span>
+                <span class="tag">Electronique</span>
+                <span class="tag">Mecanique</span>
+                <h3>TrophyTruck RC 1/5</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="/projets/boitier_telemetrie" class="card-item" data-tags="intermediaire electronique">
+                <img src="/images/projets/boitier_telemetrie.jpg" alt="Card Image">
+                <span class="intermediaire">Intermédiaire</span>
+                <span class="tag">Electronique</span>
+                <h3>Fabrication d'un boitier de télémetrie - RC</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="/projets/commande_volant" class="card-item" data-tags="intermediaire electronique">
+                <img src="/images/projets/commande_volant.jpg" alt="Card Image">
+                <span class="intermediaire">Intermédiaire</span>
+                <span class="tag">Electronique</span>
+                <h3>Commande au volant - Alpine - Bluetooth Android</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="/projets/reparation_ampli" class="card-item" data-tags="debutant electronique">
+                <img src="/images/projets/reparation_ampli.jpg" alt="Card Image">
+                <span class="debutant">Débutant</span>
+                <span class="tag">Electronique</span>
+                <h3>Réparation amplificateur auto</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="/projets/fabrication_batterie" class="card-item" data-tags="debutant electronique">
+                <img src="/images/projets/fabrication_batterie.jpg" alt="Card Image">
+                <span class="debutant">Débutant</span>
+                <span class="tag">Electronique</span>
+                <h3>Fabrication d'une batterie 12V</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="/projets/buggy" class="card-item" data-tags="expert electronique mecanique">
+                <img src="/images/projets/buggy.jpg" alt="Card Image">
+                <span class="expert">Expert</span>
+                <span class="tag">Electronique</span>
+                <span class="tag">Mecanique</span>
+                <h3>Fabrication d'un buggy</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="/projets/buggy_ecran" class="card-item" data-tags="intermediaire electronique">
+                <img src="/images/projets/buggy_ecran.jpg" alt="Card Image">
+                <span class="intermediaire">Intermédiaire</span>
+                <span class="tag">Electronique</span>
+                <h3>Ecran de contrôle buggy</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="/projets/circuit_ventilateur" class="card-item" data-tags="debutant electronique">
+                <img src="/images/projets/circuit_ventilateur.jpg" alt="Card Image">
+                <span class="debutant">Débutant</span>
+                <span class="tag">Electronique</span>
+                <h3>Circuit de déclanchement thermique de ventilateur</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <%- include('partials/footer') %>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <script src="/js/projets.js"></script>
+</body>
+</html>
